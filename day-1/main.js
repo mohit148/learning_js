@@ -1,6 +1,11 @@
-let name1 = "mohit"
-if (typeof name1 == "string" ) {
-console.log("okay")
-} else { console.log ("not okay") }
+[1,2,3,4,5].forEach(
+    (num) => {
+        console.log(Math.PI * num);
+    }
+    );
 
-
+[1,2,3,4,5].forEach(
+    (num) => {
+        console.log(num);
+    }
+    );
