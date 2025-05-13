@@ -1,0 +1,3 @@
+shift + Alt + Arrow(Up/Down) - duplicating selected code
+Ctrl + ` - terminal
+Ctrl + S - Save
