@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ifelse()">Hello</button>
+    <script>
+        function ifelse() {
+
+            let age = prompt("Enter your age");
+            age = age.trim(); // trim() function is used to remove whitespace from both sides of a string
+
+            if (age === "" || isNaN(age)) { //isNaN() function is used to check if the value is a number or not
+                alert("Please enter a valid number");
+                return;
+            }   
+
+            age = parseInt(age); // Convert the trimmed string to an integer
+            if (age >= 18) {
+                alert(`You are an adult  ${age}`);
+            } else {
+                alert("You are a minor");
+            }
+        }
+/*🔹 Explanation:
+The first if checks for invalid input. If true, it shows an alert and exits the function using return.
+
+No need for else if because return stops the function.
+
+The second if runs only if input is valid.*/
+    </script>
+</body>
+</html>
