@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showMessage()"> hello</button>
+    <script>
+function getMessage(oname) {
+    return (oname === "ECMASCRIPT" || oname === "ECMA SCRIPT") 
+        ? "you're right" 
+        : "you're wrong";
+}
+
+function showMessage() {
+    let oname = prompt('What is the "official" name of JavaScript?').toUpperCase();
+    let output = getMessage(oname);
+    alert(output);
+}
+
+// the output variable can also be declared inside the function by removing the return statement
+// example
+// function showMessage() {
+//     let oname = prompt('What is the "official" name of JavaScript?').toUpperCase();
+//     let output = (oname === "ECMASCRIPT" || oname === "ECMA SCRIPT") 
+//         ? "you're right" 
+//         : "you're wrong";
+//     alert(output);
+// }
+
+// alternative
+// oname = prompt('What is the "official" name of JavaScript?').toUpperCase();
+
+// if (oname == 'ECMAScript' || oname == 'ECMA SCRIPT') {
+//     alert('Right!');
+// } else {
+//     alert("You don't know? ECMAScript!");
+// }
+
+// the above code can also be put in a function
+
+   </script>
+</body>
+</html>

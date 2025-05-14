@@ -1,67 +1,76 @@
-/* The ternary operator (? :) is an operator that evaluates an expression 
-and returns a value. It's meant to select a value based on a condition,
-not to execute statements */
+/*
+✅ Ternary Operator Summary
 
-/* It should only be used in place of if...else when you're "assigning" or returning a value,
-not when performing general actions like logging or function calls.*/
+- The ternary operator (? :) is an **expression-based operator** that evaluates a condition and returns one of two values.
+- It is intended for **selecting between values**, not for running general statements or actions.
+- You should use the ternary operator:
+  ✔️ When assigning a value to a variable
+  ✔️ When returning a value from a function
+- Avoid using it for:
+  ❌ Logging (e.g., console.log)
+  ❌ Function calls or other side-effect actions
 
-// ✅ Good use of the ternary operator
+💡 Use it when your goal is to choose *a value*, not to perform *an action*. This improves code readability.
+*/
 
-// let result = (number === 22) ? "Valid" : "Invalid";
-
+// ✅ Good use: assigning a value
 let number = prompt("Enter a number");
-let message = number == 22 ? "Valid" : "Invalid";
+let message = (number == 22) ? "Valid" : "Invalid";
 console.log(message);
 
-// if else version of the above code
+// Equivalent if-else version:
 if (number == 22) {
   message = "Valid";
 } else {
   message = "Invalid";
-} 
+}
 console.log(message);
 
-
-// ❌ Bad use of the ternary operator
+// ❌ Bad use: using ternary for side effects like console.log
 let number1 = prompt("Enter a number");
 (number1 == 22) ? console.log("Valid") : console.log("Invalid");
-// if else version of the above code
+
+// Equivalent if-else version (recommended in this case):
 if (number1 == 22) {
   console.log("Valid");
 } else {
   console.log("Invalid");
 }
-// The above code is a bad use of the ternary operator because it is used to execute a statement (console.log) instead of returning a value.
-// the ternary operator is meant to be used in place of an if...else statement when you're "assigning" or returning a value, not when performing general actions like logging or function calls.
 
-// ✅:
+/*
+Explanation:
+- The bad example uses ternary not to assign or return a value but just to call `console.log`.
+- While it works, it's **harder to read**, and using if...else is better for clarity in such cases.
+*/
+
+// ✅ Using ternary with return (ideal use)
 function getMessage(age) {
-  return age < 18 ? "You are a minor" : "You are an adult";
-} // one final value is returned, no statements.
+  return (age < 18) ? "You are a minor" : "You are an adult";
+}
 
-// if else version of the above code
+// Equivalent if-else version:
 function getMessage(age) {
   if (age < 18) {
     return "You are a minor";
   } else {
     return "You are an adult";
   }
-} 
-// we can call the above function using get getMessage()
-let userInput = prompt("Enter your age:");
-let age = Number(userInput);  // Convert input to a number
-
-let message2 = getMessage(age);
-alert(message2); 
-
-
-
-// ❌:
-function getMessage(age) {
-  age < 18 ? console.log("Minor") : console.log("Adult");
 }
 
-// if else version of the above code
+// Calling the function properly with input
+function showMessage() {
+  let userInput = prompt("Enter your age:");
+  let age = Number(userInput);  // Convert input to a number
+  let message = getMessage(age);
+  alert(message);
+}
+
+// ❌ Bad use: using ternary for console.log inside a function
+function getMessage(age) {
+  (age < 18) ? console.log("Minor") : console.log("Adult");
+}
+
+// Better alternative using if-else:
 function getMessage(age) {
   if (age < 18) {
     console.log("Minor");
