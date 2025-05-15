@@ -1,5 +1,4 @@
-let admin,
-    name;
+let admin, name;
 
 name = "John";
 admin = name;

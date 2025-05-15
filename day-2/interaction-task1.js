@@ -9,12 +9,12 @@
 
 
 
-function AskName() { 
-    let permission = confirm("Do you wish to tell your name?");
-    if (permission) {
-        let name = prompt("Enter your name");
-        alert(`Your name is ${name}`);
-    } else {
-        alert("cacelled");
-    }
+function AskName() {
+  let permission = confirm("Do you wish to tell your name?");
+  if (permission) {
+    let name = prompt("Enter your name");
+    alert(`Your name is ${name}`);
+  } else {
+    alert("cacelled");
+  }
 }

@@ -1,11 +1,11 @@
 let a,
-b = true, 
-c = false,
-d = null,
-e = "hello world how are you!",
-f = '2 2 2',
-g = '  ',
-h = '';
+  b = true,
+  c = false,
+  d = null,
+  e = "hello world how are you!",
+  f = "2 2 2",
+  g = "  ",
+  h = "";
 console.log(Number(a)); // NaN
 console.log(Number(b)); // 1
 console.log(Number(c)); // 0
@@ -15,10 +15,6 @@ console.log(Number(f)); // NaN
 console.log(Number(g)); // 0
 console.log(Number(h)); // 0
 
-
-
-
-
 // BOOLEAN CONVERSTION
 // The conversion rule:
 
@@ -27,5 +23,5 @@ console.log(Number(h)); // 0
 
 //in JavaScript, a non-empty string is always true.
 // the string with zero "0" is true
-alert( Boolean("0") ); // true
-alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
+alert(Boolean("0")); // true
+alert(Boolean(" ")); // spaces, also true (any non-empty string is true)

@@ -1,11 +1,10 @@
 let a = "abc";
 console.log(a);
- a=123;
- console.log(a);
+a = 123;
+console.log(a);
 
- // abc
- // 123
-
+// abc
+// 123
 
 // a variable can at one moment be a string and then store a number or boolean or any other type of data
 //  this is called dynamic typing
