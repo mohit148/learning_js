@@ -37,5 +37,3 @@ console.log(+n1 + +n2); // 6
 
 // Another way to convert a string to a number is to use the Number() function:
 console.log( Number(n1) + Number(n2) ); // 6
-
-

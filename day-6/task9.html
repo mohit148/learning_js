@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funct1()">login</button>
+    <script>
+        function funct1() {
+                let user = prompt("who's there")
+                if (!user) {
+                alert("Cancelled")
+                // we can also use user == '' as condition of above code
+                // user is null
+                // null is falsy
+                // So !user becomes true
+                // The code inside the if block runs
+                // (if the person enters something instead of canceling then user will not be null it will be a truthy value)
+                }
+                let username = user.toUpperCase()
+                if (username == "ADMIN") {
+                    let password = prompt("Enter password").toUpperCase()
+
+                    if (password == "THEMASTER") {
+                        alert("Welcome! 😊");
+                    } else {
+                        alert("Wrong pasword!");
+                    }
+                } else {
+                alert("Enter a valid username")
+            }
+            } 
+    </script>
+</body>
+</html>
+
+
+
