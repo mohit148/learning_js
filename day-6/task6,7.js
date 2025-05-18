@@ -2,7 +2,7 @@
 
 // “Inclusively” means that age can reach the edges 14 or 90.
 
-if (age >= 14 && age <= 90) {
+if (age >= 14 || age <= 90) {
     //...
 }
 
@@ -15,7 +15,7 @@ if (!(age >= 14 && age <= 90)) {
 }
 // see demorgan law computer science in watch later playlist
 
-if (age < 14 && age > 90) {
+if (age < 14 || age > 90) {
     //...
 }
 
