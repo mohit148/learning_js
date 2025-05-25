@@ -21,6 +21,6 @@ console.log("hello" * 2) // NaN
 
 // 1. In `console.log("abc" > 5)`, JavaScript tries to convert the string `"abc"` to a number, which results in `NaN`. Any comparison(==,===, <, >, <=, >=) with `NaN` is always `false`, so the final output is `false`.
 // 2. In, console.log("hello" * 2) JavaScript tries to convert "abc" to a number for multiplication, which results in NaN. Multiplying NaN by 5 gives NaN, so the output is NaN.
-
+// any arithmetic operation with NaN results in NaN
 // note: multiplication, subtraction, division of a non empty string with a number results in NaN( which is also a typeof number(data type) but an invalid number)
 // whereas comparisons always return true or false
