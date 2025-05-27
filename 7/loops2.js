@@ -73,8 +73,10 @@ for (;;) {
 
 
 
-// further read loop2of2.js
 
-// breaking the loop
+// We can stop a loop using "break;"
+// further read loop2of2.js and loop2of2.html
+
+
 
 
