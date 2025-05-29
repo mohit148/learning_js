@@ -1,17 +1,17 @@
-// function loop1() {
-//   let sum = 0;
+function loop1() {
+  let sum = 0;
 
-//   while (true) {
-//     let num = Number(prompt("Write a number to sum"));
+  while (true) {
+    let num = Number(prompt("Write a number to sum"));
 
-//     if (!num) {
-//       // alert("cancelled");
-//       break;
-//     }
-//     sum += num;
-//   }
-//   alert("Current sum: " + sum);
-// }
+    if (!num) {
+      // alert("cancelled");
+      break;
+    }
+    sum += num;
+  }
+  alert("Current sum: " + sum);
+}
 
 
 // function loop1() {

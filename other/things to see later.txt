@@ -1,3 +1,7 @@
 task 4 and 5 of folder loops
 
 task 6,7 of folder "6" (! and demorgan law comuter science  also see the saved video in watch later related to this)
+
+loop2of2.js (both alerts are printing it should be one)
+
+task 2 and 3 of loops folder

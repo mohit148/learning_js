@@ -17,7 +17,27 @@ for (let i = 0; i <= 10; i++) {
 
 
 for (let i = 2; i <= 10; i++) {
-  if (i % 2 == 0) {
+  if (i % 2==0) {
     console.log(i);
   }
 }
+
+
+
+// or 
+for (let i = 2; i <= 10; i += 2) {
+  console.log(i);
+}
+
+
+// or 
+for (let i = 2; i <= 10; i++) {
+  if (i & 1) continue; // skip odd numbers
+  console.log(i);
+}
+// or
+[1, 2, 3, 4, 5, 6,7,8,9,10].forEach((num) => {
+  if (num % 2 === 0) {
+    console.log(num);
+  }
+});
