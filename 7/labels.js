@@ -49,7 +49,7 @@ myLabel: {
   console.log("This will NOT execute");
 }
 
-// Jump types:
+// Jump statement(break, continue and return , we will cover return later) are used to control the flow of execution in loops or blocks.:
 // - Jump over: continue skips the rest of current iteration and goes to next iteration.
 // - Jump out: break exits completely from current loop or labeled block.
 
