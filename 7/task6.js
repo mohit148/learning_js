@@ -25,7 +25,7 @@ while (true) {
     alert("please enter a valid number");
     continue;
     // continue is optional here but it prevents the rest of the loop from executing making it cleaner and faster
-  } else {
+  } else { // else runs if num > 100 means !(num <= 100)
     alert(`so, you're ${num} years old`);
     break;
   }

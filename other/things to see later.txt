@@ -5,3 +5,17 @@ task 6,7 of folder "6" (! and demorgan law comuter science  also see the saved v
 loop2of2.js (both alerts are printing it should be one)
 
 task 2 and 3 of loops folder
+
+see conditions and their opposite with ! operator
+
+ !(a&b) and !(a|b) equals (a|!b) and (!a|b) respectively
+ this is de morgan's law
+// see the saved video in watch later related to this
+
+
+
+algorithms for checking prime numbers 
+one of the algorithm is in task7 of "7"
+
+// https://en.wikipedia.org/wiki/Primality_test
+// learn the square root method for checking prime numbers

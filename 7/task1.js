@@ -16,24 +16,3 @@ while (i) {
 
 
 
-// ------------------------------------------------------------------------------------------------------------------
-//  task 2
-// For every loop iteration, write down which value it outputs and then compare it with the solution.
-
-// Both loops alert the same values, or not?
-
-// The prefix form ++i:
-
-// 1:
-
-// let i = 0;
-// while (++i < 5) alert( i );
-// The postfix form i++
-
-// 2:
-// let i = 0;
-// while (i++ < 5) alert( i );
-// solution
-
-// for "1" it prints 1, 2, 3, 4
-// for "2" it prints 0, 1, 2, 3, 4
