@@ -19,3 +19,10 @@ one of the algorithm is in task7 of "7"
 
 // https://en.wikipedia.org/wiki/Primality_test
 // learn the square root method for checking prime numbers
+
+
+
+asynchronous functions 
+
+
+ways to use a function without storing it in a variable or function name

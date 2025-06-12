@@ -24,6 +24,11 @@ alert(userName1); // John
 
 
 //4. Parameters
+
+// Parameters are special variables used to pass values into functions.
+// They are a type of local variable, meaning they can only be accessed within the function they are defined in.
+
+
 // Functions can accept parameters, which are values passed to the function when it is called.
 function greet(name) {
     alert('Hello, ' + name);
@@ -42,5 +47,5 @@ console.log(result); // undefined
 // parameters are also a type of local variable, so they are not accessible outside the function:
 
 
-
-// When a value is passed as a function parameter, it’s also called an argument.
+// When a value is passed to a function, it is called an *argument*.
+// The function assigns the argument value to the corresponding parameter variable.

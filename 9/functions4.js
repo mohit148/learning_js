@@ -1,18 +1,5 @@
-// 7. Function Expression
-// Functions can also be defined as expressions and assigned to variables:
-let sayHi = function() {
-    console.log('Hi');
-  };
-  
-sayHi(); // Hi
-  
-// This is called a function expression. The function can be anonymous (no name) or named.
-// For example:
-let sayHello = function hello() {
-    console.log('Hello');
-};
-  
-// 8. Function Naming
+
+// 7. Function Naming
 // Function expressions can be named or anonymous.
 // using an anonymous function as a parameter in other function  and 
 // using it for assigning a value to a variable are common use cases
@@ -32,3 +19,23 @@ function functionName() {
 // This is an anonymous function expression.
 // Note that anonymous functions cannot be called by name,
 // but they can be passed as arguments to other functions or assigned to variables.
+
+
+//-------------------------------------------------------------------------------------------------------------
+
+
+// Technically, functions can be expressions in JavaScript.
+// When defined as function expressions, they are assigned to a variable (which acts as their name).
+// Function expressions can also be assigned as values to other variables or passed as arguments.
+// This flexibility allows functions to be used as data, enabling patterns like callbacks and event handlers.
+
+
+function abc() {
+    console.log('This is a named function expression');
+}
+console.log(abc); // [Function: abc]
+
+let abc1 = function () {
+    console.log('This is an anonymous function expression');
+}
+console.log(abc1()); // [Function: abc1]
