@@ -23,11 +23,11 @@ function functionName() {
 
 //-------------------------------------------------------------------------------------------------------------
 
-
-// Technically, functions can be expressions in JavaScript.
-// When defined as function expressions, they are assigned to a variable (which acts as their name).
-// Function expressions can also be assigned as values to other variables or passed as arguments.
-// This flexibility allows functions to be used as data, enabling patterns like callbacks and event handlers.
+// ✅ Functions as Values in JavaScript
+// In JavaScript, functions are values — just like numbers, strings, or objects.
+// They can be assigned to variables, passed as arguments, and returned from other functions.
+// When defined as function expressions, they are assigned to a variable, which acts as their name.(functionName)
+// This flexibility allows functions to be used as data, enabling powerful patterns like callbacks and event handlers.
 
 
 function abc() {

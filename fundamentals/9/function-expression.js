@@ -161,5 +161,114 @@ let welcome = (age4 < 18)
 welcome(); // ✅ Works cleanly and concisely
 
 
-//-- 
-// Callback functions
+
+// An expression is:
+
+// Any valid piece of code that produces a value when it runs.
+
+//   It’s not just math or comparisons — it’s any code that results in a value.
+
+
+
+
+
+
+// ✅ Function Declarations vs Function Expressions — Syntax Clarified
+
+// 🔸 Mathematically, both function declarations and function expressions produce a value — a function object.
+// So logically, both could be considered "expressions".
+
+// 🔸 However, JavaScript follows specific syntax rules to classify code as either an expression or a statement.
+
+// 🔹 JavaScript syntax says:
+
+// function sayHi() {}
+// → This is a function declaration (a statement), not an expression.
+
+// let sayHi = function() {}
+// → This contains a function expression on the right-hand side of the assignment.
+
+// ✅ Even though both forms result in a function value,
+// only the second one is written within an expression context —
+// so only that is called a "function expression".
+
+// Expressions → produce values
+// Function expressions → produce function objects
+// These objects → are values too!
+
+// Term       	What it does	                    Keyword	           Example
+// Assign	=> Stores a value into a variable	       =            	let x = 10;
+// Pass	=> Sends a value to a function (arg)   	  ()             	greet("Alice")
+
+
+//--
+// ---
+// 📌 Callback Functions
+
+// A callback is a function passed as an argument to another function,
+// so it can be called later, often after some task is done.
+
+
+// ✅ Example 1: Synchronous Callback
+
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+function processUserInput(callback) {
+  let name = "Alice";
+  callback(name);
+}
+
+processUserInput(greet); 
+// Output: Hello, Alice!
+
+
+
+
+// ✅ Example 2: Asynchronous Callback
+
+function loadFile(callback) {
+  setTimeout(function () {
+    console.log("File loaded from disk.");
+    callback();
+  }, 3000);
+}
+
+function parseFile() {
+  console.log("Parsing file contents...");
+}
+
+loadFile(parseFile);
+// Output after 3 seconds:
+// File loaded from disk.
+// Parsing file contents...
+
+
+// ✅ Functions & References Summary:
+// Functions in JavaScript are values, just like numbers or strings.
+
+// When you assign a function to a variable (e.g., let abc = function () {}),
+// you're assigning a reference to the function — not the function code itself.
+
+// When you pass a function as an arguement to another function (callback), the parameter variable holds a reference to the same function.
+
+// That's why you can call the parameter as a function
+
+// In JavaScript:
+
+// Primitive values (numbers, strings, booleans) are copied by value
+
+// Objects, arrays, and functions are copied by reference
+
+// 🔁 Final Summary:
+// - A callback is a function passed to another function to be called later.
+// - Used in both sync and async code.
+// - Usually written as function expressions.
+
+
+
+
+
+// References - reference in javascript means a pointer to the memory location where the function is stored.
+// When you assign a function to a variable, you're creating a reference to that function.

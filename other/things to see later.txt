@@ -26,3 +26,27 @@ asynchronous functions
 
 
 ways to use a function without storing it in a variable or function name
+
+
+
+
+
+
+How a function works under the hood?
+
+
+whats console.dir
+
+function as a value
+function as a function object
+
+Is a function a value or expression 
+
+assignment is also an expression
+
+why function expression is called an expression 
+maybe function expression is an expression because it produces a function object 
+but function declaration does the same so why both are not called an expression 
+
+
+what is a reference in functions and objects

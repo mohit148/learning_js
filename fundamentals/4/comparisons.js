@@ -24,3 +24,11 @@ console.log("hello" * 2) // NaN
 // any arithmetic operation with NaN results in NaN
 // note: multiplication, subtraction, division of a non empty string with a number results in NaN( which is also a typeof number(data type) but an invalid number)
 // whereas comparisons always return true or false
+
+
+// 3. In the code below, 'x' is undefined. 
+// Performing any operation between undefined and a number results in NaN (Not a Number).
+// However, typeof NaN is still "number" in JavaScript.
+
+let x;
+console.log(typeof (x + 3));  // Output: "number"
