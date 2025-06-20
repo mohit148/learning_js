@@ -50,3 +50,14 @@ but function declaration does the same so why both are not called an expression
 
 
 what is a reference in functions and objects
+
+
+
+
+
+
+
+learn about jsdoc
+
+
+automated testing tools(example mocha)

@@ -1,0 +1,1 @@
+✅ Use continue, return, or break statements when conditions are not met to avoid unnecessary code execution.
