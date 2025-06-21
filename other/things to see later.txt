@@ -61,3 +61,7 @@ learn about jsdoc
 
 
 automated testing tools(example mocha)
+
+
+
+meaning of runtime or runtime environment in programming or javascript
