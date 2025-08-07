@@ -1,5 +1,7 @@
 // ✅ Difference between Environment, JavaScript Engine, and ECMAScript (including versions)
 
+// JavaScript is a programming language that follows the ECMAScript specification.
+
 // 📘 ECMAScript (ES)
 // ECMAScript is the official specification that defines the syntax and features of JavaScript.
 // It is not a programming language or runtime — it’s a standard that guides how JavaScript should behave.
@@ -37,7 +39,9 @@
 // Node.js:      require, process, fs, Buffer, etc.
 // Deno:         Deno.readTextFile, Deno.writeTextFile, etc.
 
-
+// API = Application Programming Interface
+// In JavaScript environments, an API is a collection of objects, methods, and properties provided to you for specific purposes.
+    
 // ⚠️ Compatibility Issues
 // Older versions of browsers or environments may include older versions of JavaScript engines.
 // These older engines may not support newer ECMAScript features like `let`, `Promise`, `async/await`, etc.
@@ -55,3 +59,7 @@
 // | V8 4.x     | 2015         | Partial ES6                        | Some ES6 features like `let`, `const`, arrow functions — not all |
 // | V8 6.x     | 2017         | Mostly ES6+                        | Supports most of ES6 and some ES7 features                       |
 // | V8 11.x    | 2023+        | ES2022+                            | Supports optional chaining `?.`, nullish coalescing `??`, etc.   |
+
+
+
+
